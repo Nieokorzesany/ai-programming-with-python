@@ -1,0 +1,51 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                  lizard_01.jpg  label:                     lizard
+ 2 key:               dachshund_02.jpg  label:                  dachshund
+ 3 key:              rottweiler_01.jpg  label:                 rottweiler
+ 4 key:                  Pomsky_03.jpg  label:                     pomsky
+
+     MATCH:
+
+             rottweiler_01.jpg: 
+Real:                 rottweiler   Classifier:                     rottweiler
+
+ NOT A MATCH:
+
+                 lizard_01.jpg: 
+Real:                     lizard   Classifier: common iguana, iguana, iguana iguana
+
+              dachshund_02.jpg: 
+Real:                  dachshund   Classifier:    doberman, doberman pinscher
+
+                 Pomsky_03.jpg: 
+Real:                     pomsky   Classifier:                 siberian husky
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+             rottweiler_01.jpg: 
+Real:                 rottweiler   Classifier:                     rottweiler  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                 lizard_01.jpg: 
+Real:                     lizard   Classifier: common iguana, iguana, iguana iguana  
+PetLabelDog: 0  ClassLabelDog: 0
+
+              dachshund_02.jpg: 
+Real:                  dachshund   Classifier:    doberman, doberman pinscher  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Pomsky_03.jpg: 
+Real:                     pomsky   Classifier:                 siberian husky  
+PetLabelDog: 0  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
